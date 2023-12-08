@@ -1,0 +1,10 @@
+//!palette
+$blue-primary: #0282f9;
+$grey-primary: #303030;
+$grey-secondary: #797979;
+
+//!container
+@mixin container($width: 1280px) {
+  width: $width;
+  margin: 0 auto;
+}
