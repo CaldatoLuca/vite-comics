@@ -52,8 +52,8 @@ export default {
 
 <template>
   <ul class="flex">
-    <li v-for="li in nav" class="flex align-center">
-      <a :href="li.link">{{ li.name }}</a>
+    <li v-for="li in nav">
+      <a :href="li.link" class="flex align-center">{{ li.name }}</a>
     </li>
   </ul>
 </template>
@@ -70,12 +70,14 @@ ul {
   li {
     height: 100%;
 
-    &:hover {
-      border-bottom: 5px solid $blue-primary;
-      border-top: 5px solid transparent;
-    }
-    a:hover {
-      color: $blue-primary;
+    a {
+      height: 100%;
+
+      &:hover {
+        border-bottom: 5px solid $blue-primary;
+        border-top: 5px solid transparent;
+        color: $blue-primary;
+      }
     }
   }
 }
