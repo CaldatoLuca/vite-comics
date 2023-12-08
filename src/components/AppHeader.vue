@@ -13,9 +13,22 @@ export default {
 
 <template>
   <header>
-    <app-logo />
-    <app-header-nav />
+    <div class="container flex space-between align-center">
+      <app-logo /> <app-header-nav />
+    </div>
   </header>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+@use "../scss/partials/variables.scss" as *;
+@use "../scss/partials/utility.scss" as *;
+
+header {
+  height: $header-height;
+
+  .container {
+    @include container;
+    height: 100%;
+  }
+}
+</style>

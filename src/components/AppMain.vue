@@ -8,4 +8,8 @@ export default {
   <main>Main</main>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+main {
+  background-color: tomato;
+}
+</style>

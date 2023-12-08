@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <h1>Logo</h1>
+  <img src="/img/dc-logo.png" alt="Logo" />
 </template>
 
 <style scoped lang="scss"></style>
