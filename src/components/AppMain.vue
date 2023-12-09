@@ -17,12 +17,13 @@ export default {
 @use "../scss/partials/utility.scss" as *;
 
 main {
-  background-color: tomato;
   background-color: black;
+  height: 100px;
 
   .container {
     @include container;
     color: white;
+    height: 100%;
   }
 }
 </style>
