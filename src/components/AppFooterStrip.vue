@@ -10,14 +10,21 @@ export default {
 </script>
 
 <template>
-  <div class="container">
-    <StripIcon />
-  </div>
+  <section>
+    <div class="container">
+      <StripIcon />
+    </div>
+  </section>
 </template>
 
 <style scoped lang="scss">
 @use "../scss/partials/variables.scss" as *;
-.container {
-  @include container(1200px);
+
+section {
+  background-color: $blue-primary;
+  padding: 50px;
+  .container {
+    @include container(1200px);
+  }
 }
 </style>

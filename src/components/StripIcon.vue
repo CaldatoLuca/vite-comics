@@ -38,7 +38,9 @@ export default {
 <template>
   <ul class="flex space-between">
     <li v-for="icon in icons" class="flex align-center">
-      <img :src="icon.src" :alt="icon.alt" />
+      <div class="img-container">
+        <img :src="icon.src" :alt="icon.alt" />
+      </div>
       <a href=""> {{ icon.name }}</a>
     </li>
   </ul>
@@ -46,14 +48,22 @@ export default {
 
 <style scoped lang="scss">
 @use "../scss/partials/utility.scss" as *;
+@use "../scss/partials/variables.scss" as *;
 
 a {
   color: white;
   text-transform: uppercase;
 }
 
-img {
+.img-container {
   width: 55px;
+  height: 55px;
   margin-right: 15px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
 }
 </style>
