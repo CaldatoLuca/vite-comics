@@ -1,19 +1,21 @@
 <script>
 import FooterLinksList from "./FooterLinksList.vue";
+import FooterLinksBgImage from "./FooterLinksBgImage.vue";
 
 export default {
   name: "Footer Links",
-  components: { FooterLinksList },
+  components: {
+    FooterLinksList,
+    FooterLinksBgImage,
+  },
 };
-components: {
-  FooterLinksList;
-}
 </script>
 
 <template>
   <section>
     <div class="container flex">
       <FooterLinksList />
+      <FooterLinksBgImage />
     </div>
   </section>
 </template>
@@ -25,6 +27,8 @@ components: {
 section {
   background-image: url(/img/footer-bg.jpg);
   padding: 40px;
+  position: relative;
+  overflow: hidden;
   .container {
     @include container();
   }
