@@ -105,7 +105,6 @@ export default {
     <div class="container">
       <div class="comics flex">
         <CommonElement
-          class="comic"
           v-for="element in comics"
           :img="element.thumb"
           :text="element.series"
@@ -122,7 +121,7 @@ export default {
 .current-series {
   color: white;
   background-color: $black-secondary;
-  padding: 40px 0 20px 0;
+  padding: 50px 0 30px 0;
   position: relative;
   text-align: center;
 
@@ -141,8 +140,22 @@ export default {
 
     .comics {
       flex-wrap: wrap;
-      .comic {
+
+      :deep(.element) {
+        margin: 10px;
+        text-transform: uppercase;
+        text-align: start;
         width: calc(100% / 6 - 20px);
+
+        .image {
+          width: 100%;
+          height: 250px;
+          margin-bottom: 15px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
       }
     }
   }
