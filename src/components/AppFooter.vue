@@ -1,22 +1,22 @@
 <script>
-import AppFooterStrip from "./AppFooterStrip.vue";
-import AppFooterLinks from "./AppFooterLinks.vue";
-import AppFooterSocials from "./AppFooterSocials.vue";
+import FooterStrip from "./FooterStrip.vue";
+import FooterLinks from "./FooterLinks.vue";
+import FooterSocials from "./FooterSocials.vue";
 
 export default {
   name: "Footer",
   components: {
-    AppFooterStrip,
-    AppFooterLinks,
-    AppFooterSocials,
+    FooterStrip,
+    FooterLinks,
+    FooterSocials,
   },
 };
 </script>
 
 <template>
   <footer>
-    <app-footer-strip />
-    <app-footer-links />
-    <app-footer-socials />
+    <footer-strip />
+    <footer-links />
+    <footer-socials />
   </footer>
 </template>

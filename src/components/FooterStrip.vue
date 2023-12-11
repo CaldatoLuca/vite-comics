@@ -1,10 +1,10 @@
 <script>
-import StripIcon from "./StripIcon.vue";
+import FooterStripIcon from "./FooterStripIcon.vue";
 
 export default {
   name: "FooterStrip",
   components: {
-    StripIcon,
+    FooterStripIcon,
   },
 };
 </script>
@@ -12,7 +12,7 @@ export default {
 <template>
   <section>
     <div class="container">
-      <StripIcon />
+      <FooterStripIcon />
     </div>
   </section>
 </template>

@@ -1,12 +1,12 @@
 <script>
-import AppLogo from "./AppLogo.vue";
-import AppHeaderNav from "./AppHeaderNav.vue";
+import HeaderLogo from "./HeaderLogo.vue";
+import HeaderNav from "./HeaderNav.vue";
 
 export default {
   name: "Header",
   components: {
-    AppLogo,
-    AppHeaderNav,
+    HeaderLogo,
+    HeaderNav,
   },
 };
 </script>
@@ -14,7 +14,7 @@ export default {
 <template>
   <header>
     <div class="container flex space-between align-center">
-      <app-logo /> <app-header-nav />
+      <header-logo /> <header-nav />
     </div>
   </header>
 </template>
