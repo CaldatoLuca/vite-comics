@@ -14,4 +14,3 @@ export default {
     <div class="text">{{ text }}</div>
   </div>
 </template>
-<style lang="scss" scoped></style>
