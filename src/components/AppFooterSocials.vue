@@ -21,8 +21,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use "../scss/partials/variables.scss" as *;
-@use "../scss/partials/utility.scss" as *;
+@use "../assets/scss/partials/variables.scss" as *;
 
 section {
   background-color: $grey-primary;

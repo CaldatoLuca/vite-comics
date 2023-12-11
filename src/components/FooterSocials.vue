@@ -9,27 +9,26 @@ export default {
     <div class="uppercase"><a href="">Follow Us</a></div>
     <ul class="flex">
       <li>
-        <a href=""><img src="/img/footer-facebook.png" alt="" /></a>
+        <a href=""><img src="../assets/img/footer-facebook.png" alt="" /></a>
       </li>
       <li>
-        <a href=""><img src="/img/footer-periscope.png" alt="" /></a>
+        <a href=""><img src="../assets/img/footer-periscope.png" alt="" /></a>
       </li>
       <li>
-        <a href=""><img src="/img/footer-pinterest.png" alt="" /></a>
+        <a href=""><img src="../assets/img/footer-pinterest.png" alt="" /></a>
       </li>
       <li>
-        <a href=""><img src="/img/footer-twitter.png" alt="" /></a>
+        <a href=""><img src="../assets/img/footer-twitter.png" alt="" /></a>
       </li>
       <li>
-        <a href=""><img src="/img/footer-youtube.png" alt="" /></a>
+        <a href=""><img src="../assets/img/footer-youtube.png" alt="" /></a>
       </li>
     </ul>
   </div>
 </template>
 
 <style scoped lang="scss">
-@use "../scss/partials/variables.scss" as *;
-@use "../scss/partials/utility.scss" as *;
+@use "../assets/scss/partials/variables.scss" as *;
 
 a {
   margin-right: 20px;

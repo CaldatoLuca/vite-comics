@@ -3,7 +3,7 @@ export default {
   name: "Nav",
   data() {
     return {
-      nav: [
+      links: [
         {
           name: "Characters",
           link: "",
@@ -51,32 +51,37 @@ export default {
 </script>
 
 <template>
-  <ul class="flex">
-    <li v-for="li in nav">
-      <a :href="li.link" class="flex align-center">{{ li.name }}</a>
-    </li>
-  </ul>
+  <nav>
+    <ul class="flex">
+      <li v-for="link in links">
+        <a :href="link.link" class="flex align-center">{{ link.name }}</a>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <style scoped lang="scss">
-@use "../scss/partials/utility.scss" as *;
-@use "../scss/partials/variables.scss" as *;
+@use "../assets/scss/partials/variables.scss" as *;
 
-ul {
+nav {
   height: 100%;
-  gap: 35px;
-  text-transform: uppercase;
-  font-weight: bold;
-  li {
-    height: 100%;
 
-    a {
+  ul {
+    height: 100%;
+    gap: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+    li {
       height: 100%;
 
-      &:hover {
-        border-bottom: 5px solid $blue-primary;
-        border-top: 5px solid transparent;
-        color: $blue-primary;
+      a {
+        height: 100%;
+
+        &:hover {
+          border-bottom: 5px solid $blue-primary;
+          border-top: 5px solid transparent;
+          color: $blue-primary;
+        }
       }
     }
   }

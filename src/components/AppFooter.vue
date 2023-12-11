@@ -20,7 +20,3 @@ export default {
     <app-footer-socials />
   </footer>
 </template>
-
-<style scoped lang="scss">
-@use "../scss/partials/variables.scss" as *;
-</style>

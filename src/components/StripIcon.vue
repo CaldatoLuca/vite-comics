@@ -6,27 +6,27 @@ export default {
       icons: [
         {
           name: "Digital Comics",
-          src: "/img/buy-comics-digital-comics.png",
+          src: "../src/assets/img/buy-comics-digital-comics.png",
           alt: "digital",
         },
         {
           name: "Dc Merchandise",
-          src: "/img/buy-comics-merchandise.png",
+          src: "../src/assets/img/buy-comics-merchandise.png",
           alt: "merchandise",
         },
         {
           name: "Subscription",
-          src: "/img/buy-comics-subscriptions.png",
+          src: "../src/assets/img/buy-comics-subscriptions.png",
           alt: "subscription",
         },
         {
           name: "Comic Shop Locator",
-          src: "/img/buy-comics-shop-locator.png",
+          src: "../src/assets/img/buy-comics-shop-locator.png",
           alt: "shop locator",
         },
         {
           name: "Dc Power Visa",
-          src: "/img/buy-dc-power-visa.svg",
+          src: "../src/assets/img/buy-dc-power-visa.svg",
           alt: "power visa",
         },
       ],
@@ -47,13 +47,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use "../scss/partials/utility.scss" as *;
-@use "../scss/partials/variables.scss" as *;
-
-a {
-  color: white;
-  text-transform: uppercase;
-}
+@use "../assets/scss/partials/variables.scss" as *;
 
 .img-container {
   width: 55px;
@@ -65,5 +59,10 @@ a {
     object-fit: contain;
     display: block;
   }
+}
+
+a {
+  color: white;
+  text-transform: uppercase;
 }
 </style>
