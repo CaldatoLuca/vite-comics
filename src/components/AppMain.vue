@@ -1,10 +1,12 @@
 <script>
 import MainJumbo from "./MainJumbo.vue";
+import MainCurrentSeries from "./MainCurrentSeries.vue";
 
 export default {
   name: "Main",
   components: {
     MainJumbo,
+    MainCurrentSeries,
   },
 };
 </script>
@@ -12,6 +14,7 @@ export default {
 <template>
   <main>
     <main-jumbo />
+    <main-current-series />
   </main>
 </template>
 
