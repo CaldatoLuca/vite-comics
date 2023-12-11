@@ -1,5 +1,6 @@
 <script>
 import CommonElement from "./CommonElement.vue";
+import MainButton from "./MainButton.vue";
 
 export default {
   name: "Current Series",
@@ -93,6 +94,7 @@ export default {
   },
   components: {
     CommonElement,
+    MainButton,
   },
 };
 </script>
@@ -102,8 +104,14 @@ export default {
     <h2>Current Series</h2>
     <div class="container">
       <div class="comics flex">
-        <CommonElement class="comic" v-for="element in comics" />
+        <CommonElement
+          class="comic"
+          v-for="element in comics"
+          :img="element.thumb"
+          :text="element.series"
+        />
       </div>
+      <MainButton />
     </div>
   </section>
 </template>
@@ -114,8 +122,9 @@ export default {
 .current-series {
   color: white;
   background-color: $black-secondary;
-  padding: 40px 0 10px 0;
+  padding: 40px 0 20px 0;
   position: relative;
+  text-align: center;
 
   h2 {
     background-color: $blue-primary;
@@ -133,7 +142,7 @@ export default {
     .comics {
       flex-wrap: wrap;
       .comic {
-        width: calc(100% / 6);
+        width: calc(100% / 6 - 20px);
       }
     }
   }

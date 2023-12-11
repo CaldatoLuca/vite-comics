@@ -1,11 +1,11 @@
 <script>
 export default {
-  name: "FooterButton",
+  name: "MainButton",
 };
 </script>
 
 <template>
-  <button class="btn btn-footer uppercase">Sign-up Now!</button>
+  <button class="btn btn-main uppercase">Load More</button>
 </template>
 
 <style scoped lang="scss">
